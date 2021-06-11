@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta property="og:title" content="模擬非同步請求" />
-        <meta property="og:description" content="常常在開發應用時，前端工程師都必須要先等待後端工程師提供應用程式介面才可以進行一些介面上的開發，這件事情通常是很沒有效益的，一般追求的是前端跟後端的開發能同時進行，不必你等我等你，那該怎麼辦呢？很簡單，只要前端這邊可以先拿到應用程式介面就行了，如果後端還沒有給，那可以自己進行模擬。" />
+        <meta property="og:description" content="常常在開發應用時，前端工程師都必須要先等待後端工程師提供應用程式介面才可以進行一些介面上的開發，這件事情通常是很沒有效益的，一般追求的是前端跟後端的開發能同時進行，不必你等我等你，那該怎麼辦呢？很簡單，只要前端這邊可以先拿到應用程式介面就行了，如果後端還沒有給，那可以自己進行模擬。"/>
         <meta property="og:locale" content="zh_TW" />
         <meta property="og:type" content="website" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="css/ajax-request-mocking.css" />
         <title>模擬非同步請求</title>
     </head>
@@ -19,11 +19,12 @@
                     <button onclick="fetchMockApi();" class="btn btn-primary">測試模擬非同步請求</button>
                 </p>
                 <h5>輸出將在下面呈現</h5>
-                <div id="output_fake" class="output"></div>
+                <div id="output_fake" class="h-auto output"></div>
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-loading-overlay/2.1.7/loadingoverlay.min.js" integrity="sha512-hktawXAt9BdIaDoaO9DlLp6LYhbHMi5A36LcXQeHgVKUH6kJMOQsAtIw2kmQ9RERDpnSTlafajo6USh9JUXckw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/2.6.0/jquery.mockjax.min.js" integrity="sha512-XfnoLXUxtEYGVB+xpqJ8PIfAzz0oD6T4wX4BRFs/MLQxCI+DvQpgfAc3ydt3V7ZTyjaHwrtC/yTG508P1PBjXQ==" crossorigin="anonymous" defer></script>
         <script src="js/ajax-request-mocking.js" defer></script>
     </body>
